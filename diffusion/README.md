@@ -21,7 +21,7 @@ Same prompt for every model: "Explain in three sentences why a mixture-of-expert
 - **On this hardware the normal model wins** on both speed and accuracy, by 17 to 33 times in time to a fluent answer.
 - **Caveat:** llama.cpp's diffusion code is a reference implementation that recomputes the whole sequence at every step with no cache. Optimised diffusion serving on datacenter GPUs is much faster, so the ratio here is not a verdict on the method. The trade-off between steps and quality is.
 
-This is the gap next-concept modelling (NCM) aims at: a few coarse-to-fine levels instead of hundreds of refinement steps. See `C:/Users/sadan/projects/ncm-lab`.
+This is the gap next-concept modelling (NCM) aims at: a few coarse-to-fine levels instead of hundreds of refinement steps. See [../ncm](../ncm).
 
 ## Reproduce
 ```
