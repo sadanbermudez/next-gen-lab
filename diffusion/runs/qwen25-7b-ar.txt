@@ -1,0 +1,42 @@
+0.00.119.323 I llama_completion: llama backend init
+0.00.119.335 I llama_completion: load the model and apply lora adapter, if any
+0.01.295.431 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.06.599.759 I cmn          init: llama threadpool init, n_threads = 12
+0.08.429.768 W *** User-specified prompt will pre-start conversation, did you mean to set --system-prompt (-sys) instead?
+0.08.434.402 I llama_completion: chat template example:
+<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+
+0.08.434.409 I 
+0.08.434.448 I system_info: n_threads = 12 (n_threads_batch = 12) / 24 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | AVX512 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.08.434.448 I 
+0.08.434.806 I sampler seed: 1
+0.08.435.065 I sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 40, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+0.08.435.390 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+0.08.435.397 I generate: n_ctx = 32768, n_batch = 2048, n_predict = 216, n_keep = 0
+0.08.435.397 I 
+user
+Explain in three sentences why a mixture-of-experts model needs less compute per token than a dense model of the same size.
+assistant
+A mixture-of-experts (MoE) model requires less compute per token compared to a dense model of the same size because it routes each token through only a subset of its parallel expert models, rather than making each token pass through every single model in the network. This selective routing reduces the computational load, as not all experts are activated for every token, leading to more efficient use of resources. Additionally, the ability to scale experts independently allows for optimizing the model architecture to better match the task requirements, further reducing unnecessary computations. [end of text]
+
+
+0.12.648.293 I common_perf_print:    sampling time =      51.01 ms
+0.12.648.297 I common_perf_print:    samplers time =      21.82 ms /   140 tokens
+0.12.648.304 I common_perf_print:        load time =    7331.66 ms
+0.12.648.327 I common_perf_print: prompt eval time =     383.28 ms /    34 tokens (   11.27 ms per token,    88.71 tokens per second)
+0.12.648.337 I common_perf_print:        eval time =    3770.04 ms /   105 runs   (   35.91 ms per token,    27.85 tokens per second)
+0.12.648.339 I common_perf_print:       total time =    4220.02 ms /   139 tokens
+0.12.648.342 I common_perf_print: unaccounted time =      15.69 ms /   0.4 %      (total - sampling - prompt eval - eval) / (total)
+0.12.648.344 I common_perf_print:    graphs reused =        104
