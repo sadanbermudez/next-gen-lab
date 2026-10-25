@@ -1,0 +1,10 @@
+2026-10-24 20:46:47 starting think-harder
+2026-10-24 20:46:48 server up after 2s (exit None)
+2026-10-25 00:41:55 starting think-harder
+2026-10-25 00:41:56 server up after 1s (exit None)
+2026-10-25 01:04:33 bench exit 0
+deepseek-v4-colibri 7: right (160 vs 160) 455.2s 144 tok
+deepseek-v4-colibri 8: right (45 vs 45) 587.7s 187 tok
+deepseek-v4-colibri 9: right (460 vs 460) 313.8s 85 tok
+
+2026-10-25 01:04:34 think-harder stopped

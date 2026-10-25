@@ -1,0 +1,47 @@
+unloaded Qwen3.6-35B-A3B-UD-Q4_K_M to free memory
+starting: cmd /c C:\Users\sadan\projects\colibri\coli.cmd serve --model C:\Users\sadan\models\deepseek-v4-flash --host 127.0.0.1 --port 8796 --ram 16 --gpu none
+[OMP] deepseek-v4: 12 compute threads (the physical cores of 24 logical CPUs; the 3 expert-loader workers take the SMT siblings); OMP_NUM_THREADS=<n> overrides, COLI_NO_OMP_TUNE=1 disables
+ram_tiers available=16.00GiB dense=resident(6.27GiB) target_slots=14 target_cache=7.50GiB head=resident-bf16 projected=15.64GiB
+v4_open index=0.96s plan=0.00s (index built once, reused by plan/inventory/head)
+v4_ssd_io mode=direct-aligned fallback=buffered-pread
+v4_autopin history=C:\Users\sadan\models\deepseek-v4-flash/.coli_usage selections=8944
+v4_hot_policy pin_slots_per_layer=8 repin_interval=6 mode=resident-ram rows16=hot-pins
+[DSV4 CUDA] no usable backend DLL (coli_cuda_dsv4_dg.dll: not next to the engine, or a DLL it needs (the CUDA runtime) is missing (Windows error 126); coli_cuda_dsv4.dll: not next to the engine, or a DLL it needs (the CUDA runtime) is missing (Windows error 126)); GPU tier disabled (CPU path remains active). The DLLs need an sm_80+ GPU (Ampere or newer); Pascal and Turing take a build with CUDA_ARCH=portable-pre-ampere NO_TC=1 (docs/deepseek-v4.md).
+v4_gpu warning=backend-unavailable; continuing-CPU
+v4_dense_resident layers=43 bytes=6.267GiB
+[gateway] input modalities: text
+OpenAI-compatible API listening on http://127.0.0.1:8796/v1
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+unloaded Qwen3.6-35B-A3B-UD-Q4_K_M to free memory
+starting: cmd /c C:\Users\sadan\projects\colibri\coli.cmd serve --model C:\Users\sadan\models\deepseek-v4-flash --host 127.0.0.1 --port 8796 --ram 16 --gpu none
+[OMP] deepseek-v4: 12 compute threads (the physical cores of 24 logical CPUs; the 3 expert-loader workers take the SMT siblings); OMP_NUM_THREADS=<n> overrides, COLI_NO_OMP_TUNE=1 disables
+ram_tiers available=16.00GiB dense=resident(6.27GiB) target_slots=14 target_cache=7.50GiB head=resident-bf16 projected=15.64GiB
+v4_open index=0.85s plan=0.00s (index built once, reused by plan/inventory/head)
+v4_ssd_io mode=direct-aligned fallback=buffered-pread
+v4_autopin history=C:\Users\sadan\models\deepseek-v4-flash/.coli_usage selections=8944
+v4_hot_policy pin_slots_per_layer=8 repin_interval=6 mode=resident-ram rows16=hot-pins
+[DSV4 CUDA] no usable backend DLL (coli_cuda_dsv4_dg.dll: not next to the engine, or a DLL it needs (the CUDA runtime) is missing (Windows error 126); coli_cuda_dsv4.dll: not next to the engine, or a DLL it needs (the CUDA runtime) is missing (Windows error 126)); GPU tier disabled (CPU path remains active). The DLLs need an sm_80+ GPU (Ampere or newer); Pascal and Turing take a build with CUDA_ARCH=portable-pre-ampere NO_TC=1 (docs/deepseek-v4.md).
+v4_gpu warning=backend-unavailable; continuing-CPU
+v4_dense_resident layers=43 bytes=6.267GiB
+[gateway] input modalities: text
+OpenAI-compatible API listening on http://127.0.0.1:8796/v1
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
+[V4] top_p 0.9 ignored; target engine is greedy
+[api] 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200 -
